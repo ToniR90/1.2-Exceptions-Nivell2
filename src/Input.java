@@ -15,7 +15,7 @@ public class Input {
                 valid = true;
             } catch (InputMismatchException e) {
                 System.out.println("The value entered is not valid, try again");
-                scanner.next(); //Buffer cleaner
+                scanner.nextLine(); //Buffer cleaner
             }
         }
         return byteVar;
@@ -31,7 +31,7 @@ public class Input {
                 valid = true;
             } catch (InputMismatchException e) {
                 System.out.println("The value entered is not valid, try again");
-                scanner.next();
+                scanner.nextLine();
             }
         }
         return intVar;
@@ -47,7 +47,7 @@ public class Input {
                 valid = true;
             } catch (InputMismatchException e) {
                 System.out.println("The value entered is not valid, try again");
-                scanner.next();
+                scanner.nextLine();
             }
 
         }
@@ -64,7 +64,7 @@ public class Input {
                 valid = true;
             } catch (InputMismatchException e) {
                 System.out.println("The value entered is not valid, try again");
-                scanner.next();
+                scanner.nextLine();
             }
         }
         return doubleVar;
@@ -86,8 +86,8 @@ public class Input {
                 }
             } catch (MyException e) {
                 System.out.println(e.getMessage());
-                scanner.next();
             }
+            scanner.nextLine();
         }
         return charVar;
     }
@@ -106,7 +106,6 @@ public class Input {
                 }
             } catch (MyException e) {
                 System.out.println(e.getMessage());
-                scanner.next();
             }
         }
         return stringVar;
@@ -130,7 +129,7 @@ public class Input {
                 }
             } catch (MyException e) {
                 System.out.println(e.getMessage());
-                scanner.next();
+                scanner.nextLine();
             }
         }
         return booleanVar;
